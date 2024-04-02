@@ -1,0 +1,14 @@
+@import '../../../variables';
+
+.register-ppal{
+
+    min-height: calc(100vh - 56px);
+
+}
+
+.formulario-register{
+  padding: 20px;
+  background-color: rgb(164, 151, 151, 0.5);
+  border: 1px solid white;
+  border-radius: 20px;
+}

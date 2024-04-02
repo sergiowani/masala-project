@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #784019;
+  font-weight: bold;
+}
+
+.errorMessage{
+  font-size: 0.8rem;
+  color: red;
+}

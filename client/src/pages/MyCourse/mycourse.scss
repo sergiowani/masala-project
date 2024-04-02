@@ -1,0 +1,128 @@
+@import '../../variables';
+
+.myCourse-ppal {
+  margin-top: 85.14px;
+}
+
+.course-col {
+  padding: 0 !important;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 1.3rem;
+}
+
+.visualizador {
+  //cambiar los 100px por el tamaño que se le dé a la descripción
+  min-height: calc(100vh - 85.14px - 80px - 100px);
+  width: 100%;
+  //cambiar 70 según altura de la descripción
+  height: calc(100% - 70px);
+}
+
+.listado-temario {
+  background-color: $color-4;
+  min-height: calc(100vh - 85.14px - 80px);
+  padding: 20px;
+  /* max-height: calc(100vh - 85.14px - 80px); */
+  overflow-y: auto;
+  /* max-width: 400px; */
+}
+
+.course-edit {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.iframe-resources {
+  width: 100%;
+  height: 500px;
+} 
+
+.descript-div {
+  background-color: $color-4;
+  min-height: 70px;
+  padding-left: 20px;
+}
+
+.botonExamen{
+  background-color: rgba(133, 102, 102, 0.387);
+}
+
+.temario{
+  display: flex;
+  gap:6px;
+  font-size: 1.2rem;
+
+
+}
+
+.recurso{
+  cursor: pointer;
+  color: #0A58CA;
+}
+
+.labelArchivo {
+  color: #007bff; 
+  font-weight: bold; 
+  text-decoration: underline; 
+}
+
+.botonExamen {
+  background-color: #a5adb6; 
+  color: #fff; 
+  border: none; 
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  padding: 0px !important;
+}
+
+.botonExamen:hover {
+  background-color: #95a5b6;
+}
+
+
+@media(width <= 1300px){
+  .temario{
+    display: flex;
+    flex-direction: column;
+    gap:1px;
+    font-size: 1rem;
+  }
+}
+
+@media(width<=1000px){
+  .listado-temario {
+    background-color: $color-4;
+    min-height: calc(100vh - 85.14px - 80px);
+    padding: 30px;
+    /* max-height: calc(100vh - 85.14px - 80px); */
+    overflow-y: auto;
+    /* max-width: 300px; */
+    
+  }
+}
+
+
+@media(width < 800px) {
+  .listado-temario {
+    background-color: $color-4;
+    min-height: calc(100vh - 85.14px - 80px);
+    padding: 35px;
+    max-height: calc(100vh - 85.14px - 80px);
+    overflow-y: auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .temario{
+    display: flex;
+    flex-direction: row;
+    gap:6px;
+    font-size: 1.3rem;
+  }
+
+}

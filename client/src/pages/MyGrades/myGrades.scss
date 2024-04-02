@@ -1,0 +1,25 @@
+@import '../../variables';
+
+.myGrades-ppal {
+  min-height: calc(100vh - 85.14px - 80px);
+  margin-top: 85.14px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.text-grade {
+  font-size: 1.5rem !important;
+}
+.text-mid{
+  font-size:1.3rem !important;
+}
+
+@media ( width <=500px){
+  .text-grade {
+    font-size: 1.1rem !important;
+  }
+  .text-mid{
+    font-size:1rem !important;
+  }
+}

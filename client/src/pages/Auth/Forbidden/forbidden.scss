@@ -1,0 +1,85 @@
+@import '../../../variables';
+
+  .forbidden-ppal {
+    min-height: calc(100vh - 85.14px - 80px);
+    margin-top: 85.14px !important;
+    background-image: url(/images/forbidden.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .serious {
+    position: relative;
+
+    .word-serious1, .word-serious2, .word-serious3, .word-serious4 {
+      position: absolute;
+      font-size: 8rem;
+      background-color: $color-1;
+      color: white;
+
+    }
+
+    .word-serious1 {
+      top: 8vh;
+      left: 2%;  
+    }
+
+    .word-serious2 {
+      top: 50vh;
+      left: 10%;
+    }
+
+    .word-serious3 {
+      top: 15vh;
+      left: 60%;
+      transform: rotate(-20deg);
+    }
+
+    .word-serious4 {
+      top: 40vh;
+      left: 70%;
+      background-color: $color-2;
+      color: $color-1;
+      transform: rotate(15deg);
+    }
+  }
+
+  @media (max-width: 1230px) {
+    .word-serious1, .word-serious2, .word-serious3, .word-serious4 {
+      font-size: 6rem !important;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .word-serious1, .word-serious2, .word-serious3, .word-serious4 {
+      font-size: 4rem !important;
+    }
+
+  }
+
+  @media (max-width: 700px) {
+    .word-serious1, .word-serious2, .word-serious3, .word-serious4 {
+      font-size: 4rem !important;
+    }
+
+    .word-serious3 {
+      left: 40% !important;
+    }
+
+    .word-serious4 {
+      left: 50% !important;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .word-serious3 {
+      left: 20% !important;
+    }
+
+    .word-serious4 {
+      left: 30% !important;
+    }
+
+  }
+
+

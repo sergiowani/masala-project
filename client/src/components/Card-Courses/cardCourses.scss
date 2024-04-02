@@ -1,0 +1,36 @@
+@import '../../variables';
+
+.serv-card{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+}
+
+
+
+  .allcourses-card{
+  border: 1px solid #000;
+  width: 350px !important;
+  min-width: 300px !important;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+
+  .card-img-top {
+    align-items: center;
+    width: 350px;
+    height: 300px;
+  }
+  
+}
+
+
+
+
+

@@ -1,0 +1,90 @@
+@import '../../../variables';
+
+
+.tipoServicios-ppal{
+  background-color: $color-4;
+  display: flex;
+  flex-direction: column;
+  margin-top: 85.14px !important;
+  min-height: calc(100vh - 85.14px - 80px);
+  width: calc((var(--bs-gutter-x)* 1) + 100%) ;
+  margin-left: calc((var(--bs-gutter-x)* -0.5));
+  margin-right: calc((var(--bs-gutter-x)* -0.5)) ;
+
+  .tipoServicio-seccion{
+    margin: 10vh;
+    border-radius: 40px;
+    background-color: $color-2;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    align-items: center;
+    gap: 20px;
+    .bodyServicio-seccion{
+      display: flex;
+      flex-direction: row;
+      gap:25px;
+      img{
+        border-radius: 20px;
+        max-height: 50vh;
+        width: 26vw;
+        min-width: 350px;
+      }
+      .textoServicio-seccion{
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media(width <=1000px){
+
+  .tipoServicios-ppal{
+    background-color: $color-4;
+    display: flex;
+    flex-direction: column;
+    margin-top: 85.14px !important;
+    min-height: calc(100vh - 85.14px - 80px);
+    width: calc((var(--bs-gutter-x)* 1) + 100%) ;
+    margin-left: calc((var(--bs-gutter-x)* -0.5));
+    margin-right: calc((var(--bs-gutter-x)* -0.5)) ;
+  
+    .tipoServicio-seccion{
+      margin: 5vh;
+      border-radius: 40px;
+      background-color: $color-2;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      height: 80%;
+      align-items: center;
+      gap: 20px;
+      .bodyServicio-seccion{
+        display: flex;
+        flex-direction: column !important;
+        gap:25px;
+        align-items: center;
+        img{
+          border-radius: 20px;
+          width: 26vw;
+          min-width: 200px !important;
+        }
+        .textoServicio-seccion{
+          width: 50vw;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+          font-size: 1rem !important;
+        }
+      }
+    }
+  }
+
+  
+  }

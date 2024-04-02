@@ -1,0 +1,34 @@
+@import '../../variables';
+
+.carousel-item-container {
+  text-align: center;
+
+  .slide-container {
+    width: 15rem;
+  }
+
+  img {
+    /* width: 255px;
+    height: 255px; */
+    width: 14.9rem;
+    height: 14.9rem;
+    margin: auto;
+  }
+
+  .caption-container {
+    
+  } 
+  
+  .title-carousel {
+    color: $color-1;
+  }
+
+  .text-carousel {
+    color: $color-3;
+  }
+
+  .carousel-indicators {
+    display: none !important;
+  }
+
+}

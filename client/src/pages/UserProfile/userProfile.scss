@@ -1,0 +1,115 @@
+@import '../../variables';
+
+/* text */
+.profile-text {
+  font-size: 1.5rem;
+}
+
+.profile-gold-text {
+  color: $color-3;
+  font-size: 1.5rem;
+}
+
+/* profile */
+.profile-section {
+  min-height: calc(100vh - 85.14px - 80px);
+  margin-top: 85.14px !important;
+  background-image: url(/images/profile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile-col {
+  padding: 0 !important;
+}
+
+/* profile card */
+.use-profile-ppal {
+  height: 90%;
+  margin: 40px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  box-shadow: 0 0 15px black;
+  padding: 40px;
+  background-color: $color-2;
+
+  .botones-prof {
+    margin-top: 20px;
+  }
+
+  .botones-prof Button {
+    display: none;
+  }
+}
+
+.profile-img-cont {
+
+  .profile-img {
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .profile-edit,
+  .profile-delete {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+  }
+}
+
+/* course card */
+.course-ppal {
+  height: 90%;
+  margin: 40px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  box-shadow: 0 0 15px black;
+  padding: 20px;
+  background-color: $color-2;
+}
+
+/* carousel */
+.div-carousel {
+  text-align: center;
+  width: 100%;
+}
+
+/* media */
+@media screen and (max-width: 1300px) {
+ .md-custom {
+  width: 50% !important;
+ }
+}
+
+@media screen and (max-width: 850px) {
+  /* profile card */
+  .use-profile-ppal {
+    .botones-prof button {
+      display: block;
+    }
+  }
+
+  .iconos-prof img {
+    display: none;
+  }
+
+  /* text */
+  .profile-text {
+    font-size: 1.2rem;
+  }
+
+  .profile-gold-text {
+    font-size: 1.2rem;
+  }
+
+}
+
+@media screen and (max-width: 700px){
+  .md-custom {
+    width: 100% !important;
+   }
+  
+}

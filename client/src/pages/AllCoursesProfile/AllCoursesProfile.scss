@@ -1,0 +1,40 @@
+.allCoursesProfile-ppal{
+  width: calc((var(--bs-gutter-x)* 1) + 100%) ;
+  height: auto;
+  min-height: calc(100vh - 80px - 85.14px);
+  margin-top: 85.14px;
+  padding: 50px;
+  margin-left: calc((var(--bs-gutter-x)* -0.5));
+  margin-right: calc((var(--bs-gutter-x)* -0.5));
+  background-image: url('../../../images/Background-allCoursesProfile.jpg');
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+
+  flex-wrap: wrap;
+
+}
+
+
+.search-ppal {
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.allCoursesProfile-Row{
+  width: 100%;
+  display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.input-buscador, .select-buscador {
+  border-radius: 10px; 
+  padding: 8px;
+}
+

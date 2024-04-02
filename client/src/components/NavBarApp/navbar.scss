@@ -1,0 +1,222 @@
+@import '../../variables';
+
+.logo-nav {
+  width: 100px;
+}
+
+.div-nav-der {
+  display: flex;
+  justify-content: end;
+}
+
+.nav-bar-texto {
+  display: flex;
+  justify-content: end;
+}
+
+.custom-navbar-bg {
+  background-color: $color-5;
+}
+
+.masala-text {
+  color: $color-1 !important;
+  font-weight: bold;
+}
+
+.head-text {
+  color: $color-3;
+  font-weight: bold;
+}
+
+.nav-alinear1 {
+  padding-left: 38px;
+}
+
+.nav-alinear2 {
+  padding-right: 38px;
+}
+
+.navbar-avatar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .div-span-escritorio {
+    /* ajustar posición */
+    position: relative;
+    top: -10px;
+    left: 2.5px;
+    background-color: $color-6;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  span{
+    font-size: 2rem;
+    
+  }
+
+  img{
+   width: 40px; 
+   height: 40px; 
+   object-fit: cover;
+   border-radius: 50%;
+   /* ajustar posición */
+   position: relative;
+   top: -7.5px;
+   left: -7px;
+  }
+
+}
+/* dropdown */
+.dropdown-menu.show {
+  transform: translate(-70px, 3px) !important;
+  background-color: $color-5;
+  border: 0;
+}
+
+/* tamaño hamburguesa */
+.dropdown-toggle {
+  width: 40px;
+  height: 40px;
+}
+
+/* ocultar flechita dropdown */
+.show.nav-link::after,
+::after {
+  display: none !important;
+}
+
+/* menú móvil */
+.navbar-avatar-movil {
+  display: none;
+}
+
+/* botonera login movil */
+.botonera-movil-1 {
+  display: none;
+}
+
+/* zona hamburguesa */
+.hamburguesa-logo {
+  position: relative;
+}
+
+/* avatar móvil */
+.navatar-movil {
+  position: absolute;
+  display: none;
+}
+
+/* media */
+@media screen and (max-width: 991px) {
+  /* avatar móvil */
+  .navatar-movil {
+    display: block !important;
+      top: 0.5vh;
+      left: -35px;
+
+    img{
+      width: 30px; 
+      height: 30px; 
+      object-fit: cover;
+      border-radius: 50%;
+      position: absolute;
+      top: 0vh;
+      left: -5px;
+     }
+
+     .div-span-movil {
+      height: 30px;
+      width: 30px;
+      background-color: $color-6;
+      padding: 5px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+     }
+   
+    
+  }
+
+  /* container fluid */
+  .fluid-nav {
+    position: relative;
+  }
+  /* menú desplegable */
+  .d-flex.flex-wrap {
+    background-color: $color-5;
+    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    padding-right: 35px !important;
+    position: absolute !important;
+    top: 100% !important;
+    padding-left: 50px;
+    padding-bottom: 25px;
+    padding-top: 40px;
+    left: 0 !important;
+  }
+
+  /* mostrar menú móvil */
+  .navbar-avatar-movil {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50px;
+  }
+
+  /* dropdown */
+  .dropdown-menu.show {
+    transform: translate(135px, -20%) !important;
+    border: 1px solid #000;
+  }
+
+  /* tamaño hamburguesa */
+  button.navbar-toggler {
+    width: 56px !important;
+    height: 40px !important;
+  }
+
+  /* hamburguesa */
+  .navbar-toggler {
+    order: 2; /* Asegura que la hamburguesa se coloque al final */
+    margin-left: auto; /* Evita que la hamburguesa se desplace a la izquierda */
+    height: auto; 
+  }
+
+  /* menú escritorio */
+  .desktop-menu {
+    display: none !important;
+  }
+
+  /* logo */
+  .fixed-top {
+    flex-wrap: nowrap !important;
+  }
+  
+  .fluid-nav {
+    align-items: flex-start !important;
+  }
+
+  /* botonera login movil */
+  .botonera-movil-1 {
+    display: block;
+  }
+
+}
+
+
+@media screen and (max-width: 591px) {
+  /* ocultar texto */
+  .masala-text, .head-text {
+    display: none;
+  } 
+}
+
